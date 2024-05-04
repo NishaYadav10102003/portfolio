@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="progressbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;600& display=swap" rel="stylesheet">
+    <style>
+      
+    /* @import url('https://fonts.googleapis.com/css?family=Exo:400,700');      
+    *{
+    margin: 0px;
+    padding: 0px;
+    } */
+    body{
+    font-family: 'Exo', sans-serif;
+    background-image: url(f.avif);
+    background-size: 100% 100%;
+     display: block;
+    }
+
+
+
+    .circles li:nth-child(5){
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+    }
+    .circles li:nth-child(6){
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+    }
+    .circles li:nth-child(7){
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+    }
+    .circles li:nth-child(8){
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+    .circles li:nth-child(9){
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+    .circles li:nth-child(10){
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }
+    @keyframes animate {
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+
+        100%{
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
+    }
+
+    /* total background */
+       .area{
+        background: rgb(20, 114, 34);  
+        background: -webkit-linear-gradient(to left, #98fb8f, #4e54c8);  
+        /* width: 100%;
+        height:100vh; */
+        }
+
+
+
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+            height: 70px;
+            width: 100%;
+            margin-top: -100px;
+            background-color: rgb(2, 2, 79);
+            position: fixed;
+
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            
+            
+
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+            
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            
+
+        }
+        nav ul li a:hover{
+            
+            color:rgb(153, 51, 93);
+            font-size: 1.1rem;
+
+        
+        }
+        
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+        .circles{
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 20%;
+        /* overflow: hidden; */
+        }
+        .circles li{
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: 0px;
+        }
+
+        .circles li:nth-child(1){
+        left: 5%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        background-color: #e05b5b;
+        }
+
+
+        .circles li:nth-child(2){
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+        background-color: #98fb8f;
+        }
+
+        .circles li:nth-child(3){
+        left: 20%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+        background-color: aqua;
+        }
+
+
+        .circles li:nth-child(4){
+        left: 40%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+        background-color: #ffbd39;
+        }
+
+        .circles li:nth-child(5){
+        left: 60%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        background-color: blueviolet;
+        }
+
+
+        .circles li:nth-child(6){
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+        background-color: bisque;
+        }
+
+        .circles li:nth-child(7){
+        left: 80%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+        background-color: cadetblue;
+        }
+
+
+        .circles li:nth-child(8){
+        left: 90%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+        background-color: chartreuse;
+        }
+        .circles li:nth-child(9){
+        left: 75%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        background-color: #f8e6e6;
+        }
+
+
+        .circles li:nth-child(10){
+        left: 34%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+        background-color: burlywood;
+        }
+
+        .circles li:nth-child(11){
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+        background-color: aquamarine;
+        }
+
+
+        .circles li:nth-child(12){
+        left: 40%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+        }
+        .circles li:nth-child(13){
+        left: 85%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        }
+
+
+        .circles li:nth-child(14){
+        left: 94%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+        }
+
+        .circles li:nth-child(15){
+        left: 20%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+        }
+
+
+        .circles li:nth-child(16){
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+        }
+
+
+        .left{
+            font-size: 2.5rem;
+            color: aqua;
+            text-shadow: 2px 2px 14px #e05b5b;
+            
+        }
+        .firstSection{
+            display:flex ;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+            
+        }
+        .firstSection > div{
+            width: 30%;
+
+        }
+        /* .context2
+        {
+            background-color: #fb8fc3;
+        } */
+        .leftSection{
+            /* background-color: red ; */
+            font-size: 3rem;
+            margin: 100px;
+           
+
+            /* margin: 30px 0; */
+        }
+
+        .rightSection img{
+            
+            width:60%;
+            height:70%;
+            margin-top:1%;
+           
+  
+            
+        }
+
+        .leftSection1 img{
+          border-radius: 50%;
+          height: 40%;
+          width: 40%;
+          align-items: center;
+        }
+        .leftSection1 h1{
+          color: #f8e6e6;
+          text-shadow: #e05b5b;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .purple{
+            color: aquamarine;
+        }
+        #element{
+            color: aquamarine;
+        }
+        #element1{
+            color: aquamarine;
+            font-size: 4rem;
+            margin-top: -100px;
+            
+        }
+        #element2{
+            color: aquamarine;
+            font-size: 4rem;
+            margin-top: -100px;
+            
+        }
+
+        #element3{
+            color: aquamarine;
+            font-size: 4rem;
+            margin-top: -100px;
+            
+        }
+        .rightSection1{
+          /* margin-top: -200px; */
+          /* background-color:rgb(0,0,0,0.2); */
+          box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+          font-size: 2.5rem;
+          color: aqua;
+          text-shadow: 2px 2px 14px #e05b5b;
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          height: 460px;
+          width: 200%;
+          
+        }
+        .rightSection2{
+          /* margin-top: -200px; */
+          /* background-color:rgb(0,0,0,0.2); */
+          box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+          font-size: 2.5rem;
+          color: aqua;
+          text-shadow: 2px 2px 14px #e05b5b;
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          height: auto;
+          width: auto;
+          
+        }
+        .leftSection1{
+          
+          /* background-color:rgb(0,0,0,0.2); */
+          /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+          /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+          /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+          /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          height: 460px;
+          width: 0%;
+        }
+
+
+        .yadav{
+          font-size: 45%;
+        }
+
+
+
+        @keyframes example {
+          from {background-color: red;}
+          to {background-color: yellow;}
+        }
+        .ani {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          animation-name: example;animation-duration: 4s;
+        }
+        /* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+.my{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: medium;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 3px solid #bbb;
+  border-radius: 5px;
+}
+
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 3cqmax solid #bbb;
+  border-radius: 5px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+ <!-- upper walla section -->
+    <header>
+        <nav>
+            <div class="left" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Nisha Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a> </li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#My Skill">My Skill</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contect Me</a></li>
+                </ul>
+          
+
+
+
+            </div>
+        </nav>
+        
+    </header>
+
+  <div id="Home"></div>
+    <main>
+        <div class="context2"  id="Home" >
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi,My name is <span class="purple">Nisha Yadav</span>
+                    <div> and I am a Passionate</div>
+                    <!-- <div> Web Developer</div> -->
+                    <span id="element"></span>
+    
+                </div>
+                <div class="rightSection">
+                    <img src="ca.jpg" alt="" >
+                </div>
+    
+            </section>
+    </main> 
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+            </script>
+            <script>
+                var typed=new Typed('#element',{
+                    strings:['Web Developer','Graphics Designer '],typedSpeed: 30,
+                })
+            </script>
+        
+    
+    <!-- <div class="About" id="About">About</div> -->
+    <div class="area" >
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                 
+                </ul>
+    </div>
+
+
+    <hr class="dashed"> 
+    <section class="ftco-about img ftco-section ftco-no-pb"data-aos="flip-left" data-aos="fade-down" id="about-section">
+
+
+      <div class="context3">
+        <section class="firstSection"  >
+            <div class="leftSection1">
+              
+              <img src="nisha.png" data-aos="fade-up" >
+              <div class="labout1>
+              <p><span class="title-s">Name: </span> <span>Nisha</span></p>
+              <p><span class="title-s">Phone: </span> <span>8174911900</span></p>
+              <p><span class="title-s">Email </span> <span>2k22.cse.2213343@gmail.com</span></p>
+              <p><span class="title-s">City </span> <span>Varanasi, India</span></p></br>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x" ></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+              <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+
+              </div>
+
+              
+  
+
+            </div>
+            
+            <div class="rightSection1">
+                <div class="habout">
+                  <span id="element1"></span>
+                  <div class="yadav">
+                    Hey there! I'm Nisha Yadav, a passionate web developer with a knack for crafting engaging and user-friendly digital experiences. With a blend of creativity, technical expertise, and a love for problem-solving, I thrive in the dynamic world of web development.
+  
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="midSection1">
+              <div class="habout">
+                <span id="element1"></span>
+                <div class="yadav">
+                  I am Nisha Yadav.I have been working as a web developer for quite some time now. I believe I am a very ambitious person who loves to work on making the website work well. Working on the web is my passion as I love to work on exciting projects. This is the field I get to express my creativity.
+
+                </div>
+              </div> -->
+          </div>
+        </section>
+      </div>
+    
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+    </script>
+    <script>
+        var typed=new Typed('#element1',{
+            strings:['ABOUT'],typedSpeed: 30,
+        })
+    </script>
+
+
+
+
+<div id="My Skill">
+<hr class="dashed" >
+<section class="ftco-about img ftco-section ftco-no-pb"data-aos="flip-left" data-aos="fade-down" id="about-section">
+<div class="my" style="color: antiquewhite; align-items: center;" ><h1><span id="element2"></span> </h1></div><br>
+
+  <div class="context3">
+    <section class="firstSection"  >
+        <!-- <div class="leftSection1">
+          
+          <img src="nisha.png" data-aos="fade-up" >
+          <div class="labout1>
+          <p><span class="title-s">Name: </span> <span>Nisha</span></p>
+          <p><span class="title-s">Phone: </span> <span>8174911900</span></p>
+          <p><span class="title-s">Email </span> <span>2k22.cse.2213343@gmail.com</span></p>
+          <p><span class="title-s">City </span> <span>Varanasi, India</span></p></br>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x" ></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter fa-2x"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+
+          </div>
+
+          
+
+
+        </div> -->
+        
+        <!-- <div class="my" style="color: antiquewhite; align-items: center;" ><h1>MY SKILLS </h1></div><br> -->
+       <!-- <div class="rightSection1"> -->
+        <div class="container">
+            <div class="card">
+              <div class="box">
+                <div class="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                      <div class="num">
+                        <h2>100<span>%</span></h2>
+                      </div>
+                </div>
+                    <h2 class="text">Html</h2>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="card3">
+              <div class="box">
+                <div class="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <svg>
+                      <div class="num">
+                        <h2>89<span>%</span></h2>
+                      </div>
+                </div>
+                    <h2 class="text">CSS</h2>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="card2">
+              <div class="box">
+                <div class="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <svg>
+                      <div class="num">
+                        <h2>85<span>%</span></h2>
+                      </div>
+                </div>
+                    <h2 class="text">Python</h2>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="card1">
+              <div class="box">
+                <div class="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <svg>
+                      <div class="num">
+                        <h2>95<span>%</span></h2>
+                      </div>
+                </div>
+                    <h2 class="text">C</h2>
+              </div>
+            
+          </div>
+    
+    
+    
+          <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+          </script>
+          <script>
+              var typed=new Typed('#element',{
+                  strings:['MY SKILL '],typedSpeed: 60,
+              })
+          </script> -->
+      </div>
+    </section>
+  </div>
+
+</section>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+</script>
+<script>
+    var typed=new Typed('#element2',{
+        strings:['My Skill'],typedSpeed: 30,
+    })
+</script>
+
+
+
+
+<section class="ftco-about img ftco-section ftco-no-pb"data-aos="flip-left" data-aos="fade-down" id="about-section">
+
+
+  <div class="context3">
+    <section class="firstSection"  >
+        <div class="leftSection1">
+          
+          <img src="nisha.png" data-aos="fade-up" >
+          <div class="labout1>
+          <p><span class="title-s">Name: </span> <span>Nisha</span></p>
+          <p><span class="title-s">Phone: </span> <span>8174911900</span></p>
+          <p><span class="title-s">Email </span> <span>2k22.cse.2213343@gmail.com</span></p>
+          <p><span class="title-s">City </span> <span>Varanasi, India</span></p></br>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x" ></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter fa-2x"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+
+          </div>
+
+          
+
+
+        </div>
+        
+        <div class="rightSection1">
+            <div class="habout">
+              <span id="element1"></span>
+              <div class="yadav">
+                Hey there! I'm Nisha Yadav, a passionate web developer with a knack for crafting engaging and user-friendly digital experiences. With a blend of creativity, technical expertise, and a love for problem-solving, I thrive in the dynamic world of web development.
+
+              </div>
+            </div>
+        </div>
+        <!-- <div class="midSection1">
+          <div class="habout">
+            <span id="element1"></span>
+            <div class="yadav">
+              I am Nisha Yadav.I have been working as a web developer for quite some time now. I believe I am a very ambitious person who loves to work on making the website work well. Working on the web is my passion as I love to work on exciting projects. This is the field I get to express my creativity.
+
+            </div>
+          </div> -->
+      </div>
+    </section>
+  </div>
+
+</section>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+</script>
+<script>
+    var typed=new Typed('#element3',{
+        strings:['ABOUT'],typedSpeed: 30,
+    })
+</script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+</script>
+<script>AOS.init();
+</script>
+
+
+
+    
+
+          
+</body>
+</html>
